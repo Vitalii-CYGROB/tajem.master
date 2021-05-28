@@ -118,6 +118,89 @@ button{
         margin-left: 560px;
     }
 }
+.bodytwo{
+    background: url(img/backone.png) center no-repeat ;
+    background-size: 100%;
+    height: 550px;
+    margin-top: 50px;
+    img{
+        margin-left: 900px;
+        margin-top: 200px;
+    }
+    h1{
+        margin-left: 873px;
+        margin-top: 34px;
+        color: #ffffff;
+        font-family: "Roboto - Black";
+        font-size: 16px;
+    }
+}
+.bodythree{
+    background-color: white;
+.bodythreetext{
+    text-align: center;
+    position: relative;
+    top: 100px;
+h6{
+    color: #413d4b;
+    font-family: "Playfair Display";
+    font-size: 22px;
+}
+p{
+    color: #2f2d35;
+    font-family: "Playfair Display";
+    font-size: 14px;
+}
+}
+.flex_one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 200px;
+    text-align: center;
+
+ img{
+    height: 60px;
+    width: 60px;
+}
+ h5{
+    margin-top: 30px;
+    color: #333333;
+    font-family: Roboto;
+    font-size: 14px;
+}
+ p{
+     margin-top: 20px;
+    color: #413d4b;
+    font-family: "Roboto - Black";
+    font-size: 14px;
+}
+}
+.flex_two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 300px;
+    text-align: center;
+ img{
+    height: 60px;
+    width: 60px;
+}
+ h6{
+     margin-top: 30px;
+    color: #333333;
+    font-family: Roboto;
+    font-size: 14px;
+}
+ p{
+     margin-top: 20px;
+    font-size: 15px;
+    color: rgb(83, 83, 83);
+}
+}
+}
 $button-size: 20px;
 $button-color: #000;
 
@@ -147,7 +230,6 @@ $button-color: #000;
     }
     .header__logo{
         display: block;
-        position: fixed;
         margin-left: 270px;
         height: -50px;
     }
@@ -272,6 +354,8 @@ $button-color: #000;
         }
         img{
         margin-left: 100px;
+        width: 200px;
+        height: 200px;
         }
     }
 
@@ -294,14 +378,14 @@ $button-color: #000;
     }
     .header__logo{
         img{
-            margin-right: 50px;
+            margin-left: -50px;
         }
     }
 }
 @media (max-width: 640px){
     .header__logo{
         img{
-            margin-right: -70px;
+            margin-left: -80px;
         }
     }
     .header_list{
@@ -314,7 +398,7 @@ $button-color: #000;
 @media (max-width: 603px){
     .header__logo{
         img{
-            margin-right: -90px;
+            margin-left: -120px;
         }
     }
     .header_list{
@@ -326,5 +410,27 @@ $button-color: #000;
         }
     }
 }
+@media (max-width: 1640px){
+    .bodytwo_content{
+        margin-left: -150px;
+    }
+}
+@media (max-width: 1440px){
+    .bodytwo_content{
+        margin-left: -250px;
+    }
+}
+@media (max-width: 1150px){
+    .bodytwo_content{
+        margin-left: -350px;
+    }
+}
+@media (max-width: 930px){
+    .bodytwo_content{
+        margin-left: -500px;
+    }
+}
+
+
 
 
