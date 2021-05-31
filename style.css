@@ -193,10 +193,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -212,7 +210,7 @@
 .bodythree .flex_one h5 {
   margin-top: 30px;
   color: #333333;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
 }
 
@@ -227,10 +225,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -259,92 +255,71 @@
 .bodyfour {
   background: url(img/backtwo.png) center no-repeat;
   background-size: 100%;
-  height: 710px;
+  height: 712px;
 }
 
-.bodyfour_text {
-  padding: 70px;
-}
-
-.bodyfour_text h1 {
+.bodyfour .bodyfour_text {
   text-align: center;
-  color: white;
+  padding: 60px;
+}
+
+.bodyfour .bodyfour_text h1 {
+  color: #ffffff;
   font-family: "Playfair Display";
   font-size: 22px;
 }
 
-.bodyfour_text p {
-  margin-top: 60px;
-  text-align: center;
-  color: white;
+.bodyfour .bodyfour_text p {
+  color: #f9f9f9;
   font-family: "Playfair Display";
-  font-size: 20px;
+  font-size: 14px;
 }
 
-.meet_flex {
+.bodyfour .flex_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 50px;
 }
 
-.meet_flex .photo1 {
+.bodyfour .flex_content .back {
   background-color: white;
-  height: 220px;
-  width: 229px;
+  width: 220px;
+  height: 229px;
 }
 
-.meet_flex .photo2 {
-  background-color: white;
-  height: 220px;
-  width: 229px;
-}
-
-.meet_flex .photo3 {
-  background-color: white;
-  height: 220px;
-  width: 229px;
-}
-
-.meet_flex .photo4 {
-  background-color: white;
-  height: 220px;
-  width: 229px;
-}
-
-.meet_flex h1 {
+.bodyfour .flex_content .flex_text {
   text-align: center;
-  color: white;
+  border: 1px solid white;
+  padding: 26px;
+}
+
+.bodyfour .flex_content .flex_text h1 {
+  color: #ffffff;
   font-family: "Roboto - Black";
   font-size: 14px;
 }
 
-.meet_flex p {
-  text-align: center;
+.bodyfour .flex_content .flex_text p {
   color: #fafafa;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 13px;
-  margin-top: 5px;
 }
 
-.meet_card {
-  margin: 5px;
+.bodyfour h5 {
+  color: #f3f3f3;
+  font-family: "Roboto";
+  font-size: 14px;
+  margin-top: 59px;
+  margin-left: 470px;
 }
 
-.textone {
-  border: 1px solid floralwhite;
-  padding: 25px;
-}
-
-.bodyfour button {
-  margin-left: 570px;
-  margin-top: 40px;
+.bodyfour .button {
   width: 120px;
   height: 40px;
   border: medium none;
@@ -355,14 +330,8 @@
   font-family: "Hammersmith One";
   border: 2px solid #00e0d0;
   color: #00e0d0;
-}
-
-.bodyfour h3 {
-  text-align: center;
-  margin-top: 20px;
-  color: #f3f3f3;
-  font-family: Roboto;
-  font-size: 17px;
+  margin-top: 40px;
+  margin-left: 555px;
 }
 
 * {
@@ -636,15 +605,27 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .bodythree {
+    margin-top: -50px;
+  }
+}
+
 @media (max-width: 750px) {
-  .flex_one {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .bodythree {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 550px) {
+  .bodythree {
+    margin-top: -150px;
+  }
+}
+
+@media (max-width: 1370px) {
+  .bodyfour_text {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
