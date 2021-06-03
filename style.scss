@@ -316,7 +316,12 @@ p{
     }
 }
 .bodysix{
+    background-color: white;
     height: auto;
+    .leftright_content{
+        display: flex;
+        justify-content: space-around;
+    }
     .left_content{
         h1{
             margin-top: 60px;
@@ -340,17 +345,37 @@ p{
         background-color:transparent;
         border-radius: 5px;
         font-family: "Hammersmith One";
+        font-size: 16px;
         border: 2px solid #00e0d0;
         color: #00e0d0; 
-        margin-top: 50px;
+        margin-top: 40px;
         }
     }
-    .rigth_content{
+    .right_content{
         h2{
+            margin-left: 22px;
+            margin-top: 60px;
             color: #413d4b;
             font-family: "Playfair Display";
-            font-size: 22px;
-            margin-top: 40px;
+            font-size: 22px;    
+        }
+       .img{
+            .left_img{
+                .one{
+                    padding: 23px;
+                }
+                .two{
+                    padding: 23px;
+                }
+            }
+            .right_img{
+                .three{
+                    padding: 23px;
+                }
+                .four{
+                    padding: 23px;
+                }
+            }
         }
     }
 }
@@ -819,7 +844,7 @@ $button-color: #000;
     }
 }
 }
-//bodysix-adapt
+//bodyfive-adapt
 @media(max-width:620px){
     .bodyfive_content1{
         h1{
@@ -846,5 +871,70 @@ $button-color: #000;
             font-size: 10px;
             margin-top: -60px;
         }
+    }
+}
+//bodysix-adapt
+@media(max-width:1190px){
+    .left_content{
+        input{
+            max-width: 700px;
+        }
+    }
+}
+@media(max-width:1090px){
+    .left_content{
+        input{
+            max-width: 600px;
+        }
+    }
+}
+@media(max-width:990px){
+    .left_content{
+        input{
+            max-width: 500px;
+        }
+    }
+}
+@media(max-width:890px){
+    .left_content{
+        input{
+            max-width: 400px;
+        }
+    }
+}
+@media(max-width:790px){
+    .left_content{
+        input{
+            max-width: 300px;
+        }
+    }
+}
+@media(max-width:690px){
+    .left_content{
+        h1{
+           margin-left: -10px;
+        }
+        input{
+            max-width: 200px;
+            margin-left: -12px;
+        }
+    }
+    .right_content{
+        margin-left: 20px;
+    }
+}
+@media(max-width:420px){
+    .left_content{
+        margin-left: 15px;
+        input{
+            max-width: 110px;
+            font-size: 15px;
+        }
+    }
+    .right_content{
+        margin-left: -1px;
+    }
+    button{
+        margin-left: -23px;
     }
 }
